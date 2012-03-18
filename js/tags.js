@@ -80,7 +80,24 @@
       tags = $.merge( tags, postTags );
     } );
     
-    return _.uniq( tags );
+    return uniq( tags ).sort();
+  }
+  
+  function uniq( a )
+  {
+    var n = [], o = {}, p, i, len;
+    
+    for( i = 0, len = a.length; i < len; i++ ) {
+      o[ a[ i ] ] = true;
+    }
+    
+    for( p in o ) {
+      if( o.hasOwnProperty( p ) ) {
+        n.push( p );
+      }
+    }
+    
+    return n;
   }
   
 } )( jQuery );
