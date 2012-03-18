@@ -1,13 +1,12 @@
 @import 'normalize.css';
 @import url("http://fonts.googleapis.com/css?family=Homenaje|Lekton");
-.white-note {
+.white-bg {
   text-shadow: none;
   color: #333;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 0 0 4px rgba(0,0,0,0.03) inset, 0 0 0 1px rgba(0,0,0,0.15);
   position: relative;
-  padding: 10px 0 25px 0;
   padding: 5px 32px 32px 32px;
 }
 * {
@@ -23,12 +22,6 @@ body {
   background: #3d4349;
   color: #efefef;
   text-shadow: 0px 1px #333;
-}
-h1 {
-  font: 400 40px 'Homenaje', sans-serif;
-  margin: 0;
-  letter-spacing: 1px;
-  text-shadow: 4px 4px 11px #222;
 }
 a {
   text-decoration: none;
@@ -48,6 +41,12 @@ a:hover {
 #header {
   height: 100px;
   margin-left: 180px;
+}
+#header h1 {
+  font: 400 40px 'Homenaje', sans-serif;
+  margin: 0;
+  letter-spacing: 1px;
+  text-shadow: 4px 4px 11px #222;
 }
 #header a:hover {
   color: inherit;
@@ -122,26 +121,19 @@ a:hover {
   color: #fff;
 }
 #post {
-  text-shadow: none;
-  color: #333;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 0 4px rgba(0,0,0,0.03) inset, 0 0 0 1px rgba(0,0,0,0.15);
-  position: relative;
   padding: 10px 0 25px 0;
 }
 #post header a {
   color: inherit;
 }
-#post header h2 {
+#post header h1 {
   font-size: 1.6em;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   position: relative;
+  margin-bottom: 0.5em;
 }
 #post header .meta {
-  position: absolute;
-  right: 0;
   padding-right: 32px;
   font-size: 0.9em;
   display: block;
@@ -158,15 +150,26 @@ a:hover {
   margin: 0 32px;
 }
 #post .content {
-  margin-top: 40px;
+  margin-top: 10px;
   line-height: 1.6;
 }
+#post .content h1,
+#post .content h2 {
+  font-size: 1.6em;
+}
 #post .content h3 {
-  color: #111;
+  font-size: 1.4em;
+}
+#post .content h1,
+#post .content h2,
+#post .content h3 {
+  color: #333;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   margin: 1em 0 0 0;
 }
+#post .content h3 + p,
+#post .content h2 + p,
 #post .content h3 + p {
   margin-top: 0.5em;
 }
@@ -178,6 +181,7 @@ a:hover {
   color: #777;
   border-left: 1px solid #ddd;
   padding-left: 25px;
+  margin-top: 30px;
 }
 #post .content a,
 #post footer a {
