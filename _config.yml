@@ -5,7 +5,9 @@ baseurl:     /
 url:         http://romac.me/wordshetypes
 
 include:     []
-exclude:     [ _src ]
+exclude:
+  - _src
+  - README.md
 
 lsi:         false
 pygments:    true
