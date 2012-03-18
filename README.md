@@ -1,5 +1,9 @@
 # Words [@nddrylliog](https://twitter.com/nddrylliog) types.
 
+From: @romac
+To: @nddrylliog
+Subject: How to run your blog on your own.
+
 # How to run it locally
 
 ## Install Jekyll
@@ -19,6 +23,10 @@
 
 Point your browser at [http://localhost:4000](http://localhost:4000).
 
+# Posts
+
+You will most likely want to update the `_posts` submodule location in *.gitmodules*.
+
 # Stylesheets
 
 The stylesheets are written with [Stylus](http://learnboost.github.com/stylus/).
@@ -30,4 +38,4 @@ to compile them to plain CSS files.
 
 # Deployment
 
-Don't forget to change `url` and `baseurl` configuration options in `_config.yml` before deploying the website.
+Don't forget to change `url` and `baseurl` configuration options in *_config.yml* before deploying the website.
