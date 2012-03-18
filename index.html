@@ -1,0 +1,13 @@
+---
+title: Words I type
+layout: default
+---
+<div id="posts">
+  {% for post in site.posts %}
+    <div id="{{ post.id }}" class="post">
+      <h2>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h2>
+    </div>
+  {% endfor %}
+</div>
