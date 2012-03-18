@@ -9,11 +9,11 @@
 
 ## Clone the repository
     
-    $ git clone --recursive git://github.com/romac/wordshetypes.git
+    $ git clone --recursive git://github.com/romac/nddrylliog-blog.git
 
 ## Run Jekyll
   
-    $ cd wordshetypes
+    $ cd nddrylliog-blog
     $ jekyll --url http://localhost:4000
     
 ## Enjoy
