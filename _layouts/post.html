@@ -10,7 +10,7 @@ layout: default
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
       <span class="tags">
         {% for tag in page.tags %}
-          <a href="/blog/tags/#{{ tag }}">{{ tag }}</a>
+          <a href="blog/tags/#{{ tag }}">{{ tag }}</a>
         {% endfor %}
       </span>
     </div>
