@@ -1,77 +1,86 @@
 
 ( function( $ )
 {
+  
+  $( init );
+  
+  var $posts, tag;
+  
+  $( window ).bind( 'hashchange', hashChanged );
+  
+  function hashChanged()
+  {
+    var tag = getTagToShow();
+    showPostsWithTag( tag );
+  }
+  
+  function init()
+  {
+    $posts  = $( '#tagged-posts > li' );
+    $tagsList = $( '#tags' );
     
-    $( init );
+    buildTagList();
     
-    var $posts, tag;
-    
-    $( window ).bind( 'hashchange', hashChanged );
-    
-    function hashChanged()
+    if( tag = getTagToShow() ) {
+      showPostsWithTag( tag );
+    }
+    else {
+      $( '#tag-all' ).addClass( 'active' );
+    }
+  }
+  
+  function getTagToShow()
+  {
+    if( location.hash.length > 1 )
     {
-        console.log( 'hashChanged: ' + getTagToShow() );
-        var tag = getTagToShow();
-        showPostsWithTag( tag );
+      return location.hash.substr( 1 );
+    }
+  }
+  
+  function showPostsWithTag( tag )
+  {
+    $tagsList.children().removeClass( 'active' );
+    $( '#tag-' + tag ).addClass( 'active' );
+    
+    if( tag === 'all' ) {
+      $posts.show();
+    }
+    else {
+      $posts.hide();
+      $posts.filter( '.' + tag ).show();
+    }
+  }
+  
+  function buildTagList()
+  {
+    var tags  = getTagsList(),
+        links = '';
+    
+    tags.unshift( 'all' );
+    
+    for( var i = 0, len = tags.length; i < len; i++ )
+    {
+      var tag = tags[ i ],
+          url = location.pathname + '#' + tag;
+      
+      links += '<li id="tag-' + tag + '"><a href="' + url + '">' + tag + '</a></li>';
     }
     
-    function init()
-    {
-        $posts    = $( '#tagged-posts > li' );
-        $tagsList = $( '#tags' );
-        
-        buildTagList();
-        
-        if( tag = getTagToShow() )
-        {
-            showPostsWithTag( tag );
-        }
-    }
+    $tagsList.append( links );
+  }
+  
+  function getTagsList()
+  {
+    var tags = [];
     
-    function getTagToShow()
+    $posts.each( function()
     {
-        if( location.hash.length > 0 )
-        {
-            return location.hash.substr( 1 );
-        }
-    }
+      var postTags = $( this ).attr( 'class' ).split( ' ' );
+      
+      tags = $.merge( tags, postTags );
+    } );
     
-    function showPostsWithTag( tag )
-    {
-        $tagsList.children().removeClass( 'active' );
-        $( '#tag-' + tag ).addClass( 'active' );
-        $posts.hide();
-        $posts.filter( '.' + tag ).show();
-    }
-    
-    function buildTagList()
-    {
-        var tags   = getTagsList(),
-            links  = '';
-        
-        for( var i = 0, len = tags.length; i < len; i++ )
-        {
-            var tag = tags[ i ],
-                url = location.pathname + '#' + tag;
-            
-            links += '<li id="tag-' + tag + '"><a href="' + url + '">' + tag + '</a></li>';
-        }
-        
-        $tagsList.append( links );
-    }
-    
-    function getTagsList()
-    {
-        var tags = [];
-        
-        $posts.each( function()
-        {
-            var postTags = $( this ).attr( 'class' ).split( ' ' );
-                
-            tags = $.merge( tags, postTags );
-        } );
-        
-        return tags;
-    }
-    
+    return _.uniq( tags );
+  }
+  
 } )( jQuery );
