@@ -5,7 +5,7 @@ baseurl:     /
 url:         http://localhost:4000
 
 include:     []
-exclude:     []
+exclude:     [ _src ]
 
 lsi:         false
 pygments:    true
