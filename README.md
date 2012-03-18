@@ -27,3 +27,7 @@ Therefore, if you want to edit them, you will need to run
     stylus -w -o css/ _src/css
     
 to compile them to plain CSS files.
+
+# Deployment
+
+Don't forget to change `url` and `baseurl` configuration options in `_config.yml` before deploying the website.
