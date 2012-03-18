@@ -8,10 +8,13 @@ scripts:
   - js/tags.js
 ---
 <ul id="tags"></ul>
-<ul id="tagged-posts">
+<div id="tagged-posts" class="posts-list">
   {% for post in site.posts %}
-    <li class="{{ post.tags | join ' ' }}">
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </li>
+    <div id="{{ post.id }}" class="post {{ post.tags | join ' ' }}">
+      <h2>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </h2>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
+    </div>
   {% endfor %}
-</ul>
+</div>

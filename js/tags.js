@@ -16,7 +16,7 @@
   
   function init()
   {
-    $posts  = $( '#tagged-posts > li' );
+    $posts  = $( '#tagged-posts > div' );
     $tagsList = $( '#tags' );
     
     buildTagList();

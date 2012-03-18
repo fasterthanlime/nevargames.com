@@ -93,21 +93,21 @@ a:hover {
 #menu li a {
   display: block;
 }
-#posts .post {
+#content .posts-list .post {
   height: auto;
   overflow: hidden;
   position: relative;
   line-height: 2;
 }
-#posts .post h2 {
+#content .posts-list .post h2 {
   font: 1.2em/2.5 'Lekton';
   margin: 0;
 }
-#posts .post h2 a {
+#content .posts-list .post h2 a {
   color: inherit;
   display: block;
 }
-#posts .post time {
+#content .posts-list .post time {
   position: absolute;
   top: 0;
   right: 0;
@@ -115,10 +115,10 @@ a:hover {
   font: 0.9em/3.6 'Lekton';
   pointer-events: none;
 }
-#posts .post:hover a {
+#content .posts-list .post:hover a {
   color: #0af;
 }
-#posts .post:hover time {
+#content .posts-list .post:hover time {
   color: #fff;
 }
 #post {
