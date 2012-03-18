@@ -8,7 +8,11 @@ layout: default
     </h2>
     <div class="meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
-      <span class="tags">{{ page.tags | array_to_sentence_string }}</span>
+      <span class="tags">
+        {% for tag in page.tags %}
+          <a href="/blog/tags/#{{ tag }}">{{ tag }}</a>
+        {% endfor %}
+      </span>
     </div>
   </header>
   <div class="content">
