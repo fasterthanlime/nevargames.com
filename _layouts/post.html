@@ -4,7 +4,7 @@ layout: default
 <article id="post" class="white-bg">
   <header>
     <h1>
-      <a href="{{ page.url }}">{{ page.title }}</a>
+      <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
     </h1>
     <div class="meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
