@@ -11,6 +11,7 @@
   margin-bottom: 5px;
 }
 #tags li a {
+  font-size: 0.95em;
   color: #fff;
   display: inline-block;
   padding: 5px;
@@ -33,5 +34,5 @@
   color: #efefef;
 }
 #tagged-posts li a:hover {
-  color: #0077b3;
+  color: #0af;
 }

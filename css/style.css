@@ -35,7 +35,7 @@ a {
   color: inherit;
 }
 a:hover {
-  color: #0077b3;
+  color: #0af;
 }
 #container {
   height: auto;
@@ -73,10 +73,10 @@ a:hover {
   line-height: 1.5;
 }
 #content a {
-  color: #0077b3;
+  color: #0af;
 }
 #content a:hover {
-  color: #00537d;
+  color: #0077b3;
 }
 #sidebar {
   width: 140px;
@@ -115,7 +115,9 @@ a:hover {
   font: 0.9em/3.6 'Lekton';
   pointer-events: none;
 }
-#posts .post:hover a,
+#posts .post:hover a {
+  color: #0af;
+}
 #posts .post:hover time {
   color: #fff;
 }
@@ -179,11 +181,11 @@ a:hover {
 }
 #post .content a,
 #post footer a {
-  color: #005f8f;
+  color: #08c;
 }
 #post .content a:hover,
 #post footer a:hover {
-  color: #003c5a;
+  color: #005580;
 }
 #post .shadow {
   background: url("/img/post_shadow.png") left bottom no-repeat;
