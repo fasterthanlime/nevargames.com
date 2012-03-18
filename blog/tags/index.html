@@ -1,0 +1,15 @@
+---
+title: Tags
+layout: default
+scripts:
+  - //ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js
+  - js/tags.js
+---
+<ul id="tags"></ul>
+<ul id="tagged-posts">
+  {% for post in site.posts %}
+    <li class="{{ post.tags | join ' ' }}">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
