@@ -2,7 +2,7 @@
 server:      true
 server_port: 4000
 baseurl:     /
-url:         http://romac.me/wordshetypes/
+url:         http://romac.me/wordshetypes
 
 include:     []
 exclude:     [ _src ]
