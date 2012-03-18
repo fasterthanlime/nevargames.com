@@ -12,6 +12,9 @@
     <meta name="author" content="Amos Wenger <nddrylliog@gmail.com>">
     
     <link rel="stylesheet" href="css/style.css" media="screen, projection">
+    {% for stylesheet in page.stylesheet %}
+    <link rel="stylesheet" href="{{ stylesheet }}" media="screen, projection" />
+    {% endfor %}
     
     <!--[if lte IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js">
