@@ -1,4 +1,3 @@
-
 # Words [@nddrylliog](https://twitter.com/nddrylliog) types.
 
 # How to run it locally
@@ -19,3 +18,12 @@
 ## Enjoy
 
 Point your browser at [http://localhost:4000](http://localhost:4000).
+
+# Stylesheets
+
+The stylesheets are written with [Stylus](http://learnboost.github.com/stylus/).
+Therefore, if you want to edit them, you will need to run
+
+    stylus -w -o css/ _src/css
+    
+to compile them to plain CSS files.
