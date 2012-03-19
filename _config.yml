@@ -1,8 +1,7 @@
 
 server:      true
 server_port: 4000
-baseurl:     /nddrylliog-blog
-url:         http://romac.me/nddrylliog-blog
+url:         http://amos.me/
 
 include:     []
 exclude:
@@ -12,4 +11,4 @@ exclude:
 lsi:         false
 pygments:    true
 markdown:    rdiscount
-permalink:   /blog/:year/:month/:day/:title
+permalink:   /blog/:year/:title
