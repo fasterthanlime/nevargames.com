@@ -1,6 +1,7 @@
 
 server:      true
 server_port: 4000
+base-url:    ''
 url:         http://amos.me/
 
 include:     []
