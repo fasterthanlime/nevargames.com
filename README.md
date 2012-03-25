@@ -1,9 +1,5 @@
 # Words [@nddrylliog](https://twitter.com/nddrylliog) types.
 
-From: @romac
-To: @nddrylliog
-Subject: How to run your blog on your own.
-
 # How to run it locally
 
 ## Install Jekyll
@@ -12,11 +8,11 @@ Subject: How to run your blog on your own.
 
 ## Clone the repository
     
-    $ git clone --recursive git://github.com/romac/nddrylliog-blog.git
+    $ git clone --recursive https://github.com/nddrylliog/nddrylliog.github.com.git
 
 ## Run Jekyll
   
-    $ cd nddrylliog-blog
+    $ cd nddrylliog.github.com
     $ jekyll --url http://localhost:4000 --base-url '' --server
     
 ## Enjoy
