@@ -1,14 +1,13 @@
-@import 'normalize.css';
 @import url("http://fonts.googleapis.com/css?family=Homenaje|Lekton");
 .white-bg{text-shadow:none;color:#333;background:#fff;border-radius:5px;box-shadow:0 0 0 4px rgba(0,0,0,0.03) inset,0 0 0 1px rgba(0,0,0,0.15);position:relative;padding:5px 32px 32px 32px}
 *{box-sizing:border-box}
-html{min-height:100%;overflow-y:auto;background-color:transparent}
-body{font-family:'Helvetica',sans-serif;background:#3d4349;color:#efefef;text-shadow:0 1px #333}
+html{min-height:100%;overflow-y:auto}
+body{font-family:Helvetica,Arial,sans-serif;background:#3d4349;color:#efefef;text-shadow:0 1px #333}
 a{text-decoration:none;color:inherit;}
 a:hover{color:#0af}
 #container{height:auto;overflow:hidden;width:980px;padding-left:40px;padding-top:40px;margin-bottom:50px}
 #header{height:100px;margin-left:180px;}
-#header h1{font:400 40px 'Homenaje',sans-serif;margin:0;letter-spacing:1px;text-shadow:4px 4px 11px #222}
+#header h1{font:400 40px Homenaje,Helvetica,Arial,sans-serif;margin:0;letter-spacing:1px;text-shadow:4px 4px 11px #222}
 #header a:hover{color:inherit}
 #content{width:700px;margin-left:40px;float:left;}
 #content h2,#content h3{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:400}
@@ -19,12 +18,12 @@ a:hover{color:#0af}
 #content a:hover{color:#0077b3}
 #sidebar{width:140px;float:left;margin-top:4px}
 #menu{list-style:none;padding:0;margin:0;}
-#menu li{font:1.2em/2 'Lekton',sans-serif;}
+#menu li{font:1.2em/2 Lekton,Helvetica,Arial,sans-serif;}
 #menu li a{display:block}
 #content .posts-list .post{height:auto;overflow:hidden;position:relative;line-height:2;}
-#content .posts-list .post h2{font:1.2em/2.5 'Lekton';margin:0;}
+#content .posts-list .post h2{font:1.2em/2.5 Lekton,Helvetica,Arial,sans-serif;margin:0;}
 #content .posts-list .post h2 a{color:inherit;display:block}
-#content .posts-list .post time{position:absolute;top:0;right:0;color:#999;font:.9em/3.6 'Lekton';pointer-events:none}
+#content .posts-list .post time{position:absolute;top:0;right:0;color:#999;font:.9em/3.6 Lekton,Helvetica,Arial,sans-serif;pointer-events:none}
 #content .posts-list .post:hover a{color:#0af}
 #content .posts-list .post:hover time{color:#fff}
 #post{padding:10px 0 25px 0;}
@@ -38,8 +37,11 @@ a:hover{color:#0af}
 #post .content h3{font-size:1.4em}
 #post .content h1,#post .content h2,#post .content h3{color:#333;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:400;margin:1em 0 0 0}
 #post .content h3 + p,#post .content h2 + p,#post .content h3 + p{margin-top:.5em}
-#post .content code{font-family:.9em;font-family:Monaco,Droid Sans,Inconsolata,monospace}
-#post footer{color:#777;border-left:1px solid #ddd;padding-left:25px;margin-top:30px}
+#post .content code{font-size:.9em;font-family:Monaco,Droid Sans,Inconsolata,monospace;border-left:2px solid #ddd;display:inline-block;padding-left:10px}
+#post .content blockquote{margin:0;border-left:2px solid #ddd;display:block;padding-left:10px}
+#post .content ul,#post .content ol{padding-left:20px;}
+#post .content ul li,#post .content ol li{margin-bottom:10px}
+#post footer{color:#777;border-left:2px solid #ddd;padding-left:15px;margin-top:30px}
 #post .content a,#post footer a{color:#08c;}
 #post .content a:hover,#post footer a:hover{color:#005580}
 #post .shadow{background:url("/img/post_shadow.png") left bottom no-repeat;width:100%;height:10px;display:block;position:absolute;left:0;bottom:-10px;z-index:2}
@@ -47,13 +49,3 @@ a:hover{color:#0af}
 .pagination .next{float:right}
 .pagination a{color:#999 !important;}
 .pagination a:hover{color:#fff !important}
-img {
-  max-width: 100%;
-  height: auto;
-  width: auto\9; /* IE 8 */
-}
-
-.video embed, .video object, .video iframe {
-  width: 100%;
-  height: auto;
-}

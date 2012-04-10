@@ -6,19 +6,22 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name: "viewport" content="width=device-width, initial-scale=1">
     
-    <base href="{{ site.url }}/" />
+    <base href="{{ site.url }}" />
     
     <title>{{ page.title }} - amos.me</title>
     <meta name="author" content="Amos Wenger <nddrylliog@gmail.com>">
     
-    <link rel="stylesheet" href="css/style.css?v1" media="screen, projection">
+    <link rel="alternate feed" type="application/rss+xml" href="/blog/feed.xml"/>
+    
+    <link rel="stylesheet" href="css/normalize.css" media="all" />
+    <link rel="stylesheet" href="css/style.css?v1" media="screen, projection" />
     {% for stylesheet in page.stylesheets %}
     <link rel="stylesheet" href="{{ stylesheet }}" media="screen, projection" />
     {% endfor %}
     
     <!--[if lte IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js">
-      <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js">
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
   </head>
   <body>
@@ -32,7 +35,7 @@
             <nav>
                 <ul id="menu">
                     <li>
-                        <a href="/about/">about</a>
+                        <a href="about/">about</a>
                     </li>
                     <li>
                         <a href="/">blog</a>

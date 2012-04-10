@@ -1,7 +1,4 @@
 
-// Reset: http://necolas.github.com/normalize.css/
-@import 'normalize.css'
-
 // nib: http://visionmedia.github.com/nib/
 // @import 'nib'
 
@@ -21,11 +18,11 @@ $containerWidth = 980px
 $sidebarWidth   = 140px
 $contentWidth   = 700px
 
-$headerFont     = 400 40px 'Homenaje', sans-serif
-$navFont        = 1.2em \/ 2 'Lekton', sans-serif
-$bodyFont       = 'Helvetica', sans-serif
-$titleFont      = 1.2em \/ 2.5 'Lekton'
-$timeFont       = 0.9em \/ 3.6 'Lekton'
+$headerFont     = 400 40px Homenaje, Helvetica, Arial, sans-serif
+$navFont        = 1.2em \/ 2 Lekton, Helvetica, Arial, sans-serif
+$bodyFont       = Helvetica, Arial, sans-serif
+$titleFont      = 1.2em \/ 2.5 Lekton, Helvetica, Arial, sans-serif
+$timeFont       = 0.9em \/ 3.6 Lekton, Helvetica, Arial, sans-serif
 
 .white-bg
   text-shadow none
@@ -46,7 +43,6 @@ fix-float()
 html
   min-height 100%
   overflow-y auto
-  background-color transparent
 
 body
   font-family $bodyFont
@@ -175,13 +171,25 @@ a
     h3 + p, h2 + p, h3 + p
       margin-top 0.5em
     code
-      font-family 0.9em
+      font-size 0.9em
       font-family Monaco, Droid Sans, Inconsolata, monospace
+      border-left 2px solid #DDD
+      display inline-block
+      padding-left 10px
+    blockquote
+      margin 0
+      border-left 2px solid #DDD
+      display block
+      padding-left 10px
+    ul, ol
+      padding-left 20px
+      li
+        margin-bottom 10px
   
   footer
     color #777
-    border-left 1px solid #DDD
-    padding-left 25px
+    border-left 2px solid #DDD
+    padding-left 15px
     margin-top 30px
   
   .content, footer
@@ -209,16 +217,3 @@ a
     color #999 !important
     &:hover
       color white !important
-
-@css {
-  img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9; /* IE 8 */
-  }
-
-  .video embed, .video object, .video iframe {
-    width: 100%;
-    height: auto;
-  }
-}
