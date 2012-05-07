@@ -13,7 +13,7 @@
 ## Run Jekyll
   
     $ cd nddrylliog.github.com
-    $ jekyll --url http://localhost:4000 --base-url '' --server
+    $ jekyll --url http://localhost:4000 --base-url '' --auto --server
     
 ## Enjoy
 
@@ -28,7 +28,7 @@ You will most likely want to update the `_posts` submodule location in *.gitmodu
 The stylesheets are written with [Stylus](http://learnboost.github.com/stylus/).
 Therefore, if you want to edit them, you will need to run
 
-    stylus -w -o css/ _src/css
+    stylus -w -c -o css/ _src/css
     
 to compile them to plain CSS files.
 

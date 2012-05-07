@@ -68,7 +68,7 @@ a
   height 100px
   margin-left $sidebarWidth + $colSpacing
   h1
-    font: $headerFont
+    font $headerFont
     margin 0
     letter-spacing 1px
     text-shadow 4px 4px 11px #222
@@ -132,17 +132,20 @@ a
       time
         color white
 
-#post
+.hr
+  display none
+
+.post-single
   padding 10px 0 25px 0
   header
-    a
-      color inherit
     h1
       font-size 1.6em
       font-family 'Helvetica Neue', Helvetica, Arial, sans-serif
       font-weight 400
       position relative
       margin-bottom 0.5em
+      a
+        color inherit !important
     .meta
       padding-right 32px
       font-size 0.9em
@@ -217,3 +220,68 @@ a
     color #999 !important
     &:hover
       color white !important
+
+@media only screen and (max-width: 481px)
+  
+  #container
+    width auto
+    margin 0
+    padding 10px 10px
+  
+  #sidebar, #content
+    float none
+    width auto
+  
+  #header
+    margin-left 0
+    h1
+      font-size 34px
+      line-height 1.2
+      span
+        display block
+        height 0
+        visibility hidden
+  
+  #menu
+    fix-float()
+    width auto
+    li
+      font-size 1.4em
+      float left
+      width 50%
+      &:nth-child(odd)
+        text-align left
+      &:nth-child(even)
+        text-align right
+  
+  .hr
+    display block
+    text-align center
+    margin-bottom 20px
+    
+  #content
+    margin-left 0
+    .posts-list
+      .post
+        margin-bottom 25px
+        h2
+          line-height 1.4
+        time
+          display none
+    
+    .post-single
+      padding 1px 0 20px 0 !important
+      header, .content, footer
+        margin 0 15px
+      header
+        h1
+          font-size 1.4em
+        .meta
+          text-align left
+          padding 0
+      .content
+        h1, h2, h3
+          font-size 1.2em
+        blockquote, code
+          padding-left 5px
+  
