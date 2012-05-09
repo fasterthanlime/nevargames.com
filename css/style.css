@@ -50,6 +50,7 @@ a:hover{color:#0af}
 .pagination .next{float:right}
 .pagination a{color:#999 !important;}
 .pagination a:hover{color:#fff !important}
+.mugshot{float:right;margin-left:15px;border:2px solid #ddd}
 @media only screen and (max-width: 481px){#container{width:auto;margin:0;padding:10px 10px}
 #sidebar,#content{float:none;width:auto}
 #header{margin-left:0;}
