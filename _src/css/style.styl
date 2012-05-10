@@ -18,7 +18,7 @@ $containerWidth = 1080px
 $sidebarWidth   = 120px
 $contentWidth   = 800px
 
-$headerFont     = 700 2.8em 'Open Sans Condensed', sans-serif
+$headerFont     = 700 2.5em 'Open Sans Condensed', sans-serif
 $metaFont       = 700 1.2em 'Open Sans Condensed', sans-serif
 $bragFont       = 300 1.05em Amethysta, serif
 $navFont        = 1.8em \/ 1.5 'Open Sans Condensed', sans-serif
@@ -37,7 +37,7 @@ $titleFont      = 1.0em \/ 1.5 Amethysta, serif
   background white
   box-shadow 0 0 0 4px rgba(0, 0, 0, 0.03) inset, 0 0 0 1px rgba(0, 0, 0, 0.15)
   position relative
-  padding 5px 32px 32px 32px
+  padding 5px 60px
 
 *
   box-sizing: border-box;
@@ -118,6 +118,7 @@ a
 #content .posts-list
   .brag
     font $bragFont
+    margin-bottom 10px
     h1
       font-family 'Open Sans Condensed', sans-serif
       font-size 2.1em
@@ -125,7 +126,6 @@ a
       width 240px
       height 240px
       margin-right 1.5em
-    margin-bottom 50px
 
   .post
     fix-float()
@@ -180,7 +180,7 @@ a
             color darken($mainColor, 30%) !important
     
   header, .content, footer
-      margin 0 60px
+      margin 32px 60px
   
   .content
     margin-top 50px
@@ -250,7 +250,7 @@ a
     width 120px
     height 120px
 
-@media only screen and (max-width: 1023px)
+@media only screen and (max-width: 900px)
   
   #container
     width auto
@@ -275,11 +275,11 @@ a
   #menu
     fix-float()
     width auto
-    margin-left 8px
+    margin-left 60px
     li
       font-size 1.4em
       display inline-block
-      margin-left 0.4em
+      margin-right 0.4em
   
   .hr
     display block
@@ -301,7 +301,7 @@ a
     .post-single
       padding 1px 0 20px 0 !important
       header, .content, footer
-        margin 0 15px
+        margin 32px 60px
       header
         margin-bottom 30px
         h1
@@ -316,6 +316,12 @@ a
           padding-left 5px
   
 @media only screen and (max-width: 600px)
+ 
+  #menu
+    li
+      font-size 1.4em
+      display inline-block
+      margin-right 0.4em
     
   #content
     margin-left 0
@@ -323,15 +329,20 @@ a
       .brag
         font-size 1.1em
         .mugshot
-          width 33%
+          width 25%
           min-width: 80px
           height auto
         h1
           font-size 1.3em
+    
+    .post-single
+      header, .content, footer
+        margin 32px 60px
 
 @media only screen and (max-width: 481px)
 
   #menu
+    margin-left 15px
     li
       font-size 1.1em
 
@@ -341,7 +352,7 @@ a
   #content
     margin-left 0
     .posts-list
-      padding 5px 16px 16px 16px !important
+      padding 5px 15px !important
       font-size 0.8em
       .brag
         font-size 1em
@@ -350,5 +361,9 @@ a
           font-size 1em
         time
           display none
+    
+    .post-single
+      header, .content, footer
+        margin 16px 15px
 
 

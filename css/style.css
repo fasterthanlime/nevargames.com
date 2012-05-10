@@ -1,7 +1,7 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Amethysta");
 .clear{clear:both}
 .hidden{display:none}
-.white-bg{text-shadow:none;color:#333;background:#fff;box-shadow:0 0 0 4px rgba(0,0,0,0.03) inset,0 0 0 1px rgba(0,0,0,0.15);position:relative;padding:5px 32px 32px 32px}
+.white-bg{text-shadow:none;color:#333;background:#fff;box-shadow:0 0 0 4px rgba(0,0,0,0.03) inset,0 0 0 1px rgba(0,0,0,0.15);position:relative;padding:5px 60px}
 *{box-sizing:border-box}
 html{min-height:100%;overflow-y:auto}
 body{font-size:1.15em;font-family:Amethysta,serif;background:#3d4349;color:#efefef;text-shadow:0 1px #333}
@@ -9,7 +9,7 @@ a{text-decoration:none;color:inherit;}
 a:hover{color:#d94}
 #container{height:auto;overflow:hidden;width:1080px;padding-left:20px;margin:0 auto}
 #header{height:100px;margin-left:140px;}
-#header h1{font:700 2.8em 'Open Sans Condensed',sans-serif;margin:0;letter-spacing:1px;text-shadow:4px 4px 11px #222}
+#header h1{font:700 2.5em 'Open Sans Condensed',sans-serif;margin:0;letter-spacing:1px;text-shadow:4px 4px 11px #222}
 #header a:hover{color:inherit}
 #content{width:800px;margin:0 auto;margin-left:20px;float:left;}
 #content h2,#content h3{font-family:'Open Sans Condensed',sans-serif;font-weight:400}
@@ -22,7 +22,7 @@ a:hover{color:#d94}
 #menu{list-style:none;padding:0;margin:0;}
 #menu li{font:1.8em/1.5 'Open Sans Condensed',sans-serif;}
 #menu li a{display:block}
-#content .posts-list .brag{font:300 1.05em Amethysta,serif;margin-bottom:50px}
+#content .posts-list .brag{font:300 1.05em Amethysta,serif;margin-bottom:10px;}
 #content .posts-list .brag h1{font-family:'Open Sans Condensed',sans-serif;font-size:2.1em}
 #content .posts-list .brag .mugshot{width:240px;height:240px;margin-right:1.5em}
 #content .posts-list .post{height:auto;overflow:hidden;position:relative;line-height:2;border-top:1px solid #ccc;}
@@ -33,13 +33,13 @@ a:hover{color:#d94}
 #content .posts-list .post:hover time{color:#ab6d1f}
 .hr{display:none}
 .post-single{padding:10px 0 25px 0;}
-.post-single header h1{font-size:2.6em;font-weight:400;position:relative;margin-bottom:5px;font:700 2.8em 'Open Sans Condensed',sans-serif;}
+.post-single header h1{font-size:2.6em;font-weight:400;position:relative;margin-bottom:5px;font:700 2.5em 'Open Sans Condensed',sans-serif;}
 .post-single header h1 a{color:inherit !important}
 .post-single header .meta{padding-right:32px;font:700 1.2em 'Open Sans Condensed',sans-serif;display:block;color:#909090;}
 .post-single header .meta time{color:#9b9}
 .post-single header .meta .tags a{color:#d94 !important;}
 .post-single header .meta .tags a:hover{color:#ab6d1f !important}
-.post-single header,.post-single .content,.post-single footer{margin:0 60px}
+.post-single header,.post-single .content,.post-single footer{margin:32px 60px}
 .post-single .content{margin-top:50px;line-height:1.6;}
 .post-single .content h1,.post-single .content h2{font-size:1.6em}
 .post-single .content h3{font-size:1.4em}
@@ -58,33 +58,37 @@ a:hover{color:#d94}
 .pagination a{color:#999 !important;}
 .pagination a:hover{color:#fff !important}
 .mugshot{float:left;margin-right:15px;border-radius:6px;width:120px;height:120px}
-@media only screen and (max-width: 1023px){#container{width:auto;max-width:800px;margin:0 auto;padding:0}
+@media only screen and (max-width: 900px){#container{width:auto;max-width:800px;margin:0 auto;padding:0}
 #sidebar,#content{float:none;width:auto;margin-top:10px}
 #header{margin-left:0;}
 #header h1{font-size:34px;line-height:1.2;}
 #header h1 span display block{height:0;visibility:hidden}
-#menu{height:auto;overflow:hidden;width:auto;margin-left:8px;}
-#menu li{font-size:1.4em;display:inline-block;margin-left:.4em}
+#menu{height:auto;overflow:hidden;width:auto;margin-left:60px;}
+#menu li{font-size:1.4em;display:inline-block;margin-right:.4em}
 .hr{display:block;text-align:center;margin-bottom:20px}
 #content{margin-left:0;}
 #content .posts-list .brag .mugshot{max-width:240px;width:100%;height:auto;margin:0 4% 4% 0}
 #content .posts-list .brag h1{font-size:1.8em}
 #content .post-single{padding:1px 0 20px 0 !important;}
-#content .post-single header,#content .post-single .content,#content .post-single footer{margin:0 15px}
+#content .post-single header,#content .post-single .content,#content .post-single footer{margin:32px 60px}
 #content .post-single header{margin-bottom:30px;}
 #content .post-single header h1{font-size:1.8em}
 #content .post-single header .meta{text-align:left;padding:0}
 #content .post-single .content h1,#content .post-single .content h2,#content .post-single .content h3{font-size:1.2em}
 #content .post-single .content blockquote,#content .post-single .content code{padding-left:5px}
-}@media only screen and (max-width: 600px){#content{margin-left:0;}
+}@media only screen and (max-width: 600px){#menu li{font-size:1.4em;display:inline-block;margin-right:.4em}
+#content{margin-left:0;}
 #content .posts-list .brag{font-size:1.1em;}
-#content .posts-list .brag .mugshot{width:33%;min-width:80px;height:auto}
+#content .posts-list .brag .mugshot{width:25%;min-width:80px;height:auto}
 #content .posts-list .brag h1{font-size:1.3em}
-}@media only screen and (max-width: 481px){#menu li{font-size:1.1em}
+#content .post-single header,#content .post-single .content,#content .post-single footer{margin:32px 60px}
+}@media only screen and (max-width: 481px){#menu{margin-left:15px;}
+#menu li{font-size:1.1em}
 .post-single{font-size:.8em}
 #content{margin-left:0;}
-#content .posts-list{padding:5px 16px 16px 16px !important;font-size:.8em;}
+#content .posts-list{padding:5px 15px !important;font-size:.8em;}
 #content .posts-list .brag{font-size:1em}
 #content .posts-list .post h2{font-size:1em}
 #content .posts-list .post time{display:none}
+#content .post-single header,#content .post-single .content,#content .post-single footer{margin:16px 15px}
 }
