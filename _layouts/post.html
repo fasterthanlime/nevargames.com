@@ -8,6 +8,7 @@ layout: default
     </h1>
     <div class="meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
+      &bullet;
       <span class="tags">
         {% for tag in page.tags %}
           <a href="/blog/tags/#{{ tag }}">{{ tag }}</a>
@@ -19,7 +20,7 @@ layout: default
     {{ content }}
   </div>
   <footer>
-    <a href="https://twitter.com/nddrylliog"><img class="mugshot" src="/img/mugshot.png"></a>
+    <a href="https://twitter.com/nddrylliog"><img class="mugshot" src="/img/mugshot.jpg"></a>
 
     <p>
         Hey! I'm Amos Wenger. I help engineer <a href="http://official.fm">official.fm</a>, 

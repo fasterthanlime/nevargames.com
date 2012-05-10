@@ -2,7 +2,23 @@
 title: Words I type
 layout: default
 ---
-<div id="posts" class="posts-list">
+<div id="posts" class="posts-list white-bg">
+  <header class="brag">
+    <a href="https://twitter.com/nddrylliog"><img class="mugshot" src="/img/mugshot.jpg"></a>
+
+    <h1>Hey! I'm Amos Wenger.</h1>
+
+    <p>
+        I help engineer <a href="http://official.fm">official.fm</a>, 
+        a start-up trying to simplify the life of music professionals.
+    </p>
+
+    <p>
+        I'm always looking for talented people. Ping me if you want to talk! I'm @nddrylliog
+        on <a href="https://twitter.com/nddrylliog">Twitter</a> and <a href="https://github.com/nddryliog">GitHub</a>.
+    </p>
+  </header>
+
   {% for post in paginator.posts %}
     <div id="{{ post.id }}" class="post">
       <h2>

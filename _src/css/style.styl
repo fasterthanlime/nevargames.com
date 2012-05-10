@@ -7,31 +7,32 @@
 
 // Inspired by http://darkeffector.tumblr.com
 
-@import url('http://fonts.googleapis.com/css?family=Homenaje|Lekton')
+@import url('http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700')
 
 $bgColor        = #3D4349
 $textColor      = #EFEFEF
-$mainColor     = #0AF
+$mainColor      = #d94
 
-$colSpacing     = 40px
-$containerWidth = 980px
-$sidebarWidth   = 140px
-$contentWidth   = 700px
+$colSpacing     = 20px
+$containerWidth = 1080px
+$sidebarWidth   = 120px
+$contentWidth   = 800px
 
-$headerFont     = 400 40px Homenaje, Helvetica, Arial, sans-serif
-$navFont        = 1.2em \/ 2 Lekton, Helvetica, Arial, sans-serif
+$headerFont     = 700 2.8em 'Open Sans Condensed', sans-serif
+$metaFont       = 700 1.2em 'Open Sans Condensed', sans-serif
+$bragFont       = 700 1.3em 'Open Sans Condensed', sans-serif
+$navFont        = 1.8em \/ 1.5 'Open Sans Condensed', sans-serif
 $bodyFont       = Helvetica, Arial, sans-serif
-$titleFont      = 1.2em \/ 2.5 Lekton, Helvetica, Arial, sans-serif
-$timeFont       = 0.9em \/ 3.6 Lekton, Helvetica, Arial, sans-serif
+$titleFont      = 1.2em \/ 2.5 'Open Sans Condensed', sans-serif
 
 .white-bg
   text-shadow none
   color #333
   background white
-  border-radius 5px
   box-shadow 0 0 0 4px rgba(0, 0, 0, 0.03) inset, 0 0 0 1px rgba(0, 0, 0, 0.15)
   position relative
   padding 5px 32px 32px 32px
+  border-radius 0 0 10px 10px
 
 *
   box-sizing: border-box;
@@ -61,7 +62,6 @@ a
   fix-float()
   width $containerWidth
   padding-left $colSpacing
-  padding-top 40px
   margin-bottom 50px
   
 #header
@@ -80,7 +80,7 @@ a
   margin-left $colSpacing
   float left
   h2, h3
-    font-family 'Helvetica Neue', Helvetica, Arial, sans-serif
+    font-family 'Open Sans Condensed', sans-serif
     font-weight 400
   h2
     font-size 1.6em
@@ -97,7 +97,7 @@ a
 #sidebar
   width $sidebarWidth
   float left
-  margin-top 4px
+  margin-top 80px
 
 #menu
   list-style none
@@ -109,10 +109,21 @@ a
       display block
 
 #content .posts-list
+  .brag
+    font $bragFont
+    h1
+      font-size 2.1em
+    .mugshot
+      width 240px
+      height 240px
+      margin-right 1.5em
+    margin-bottom 35px
+
   .post
     fix-float()
     position relative
     line-height 2
+    border-top 1px solid #ccc
     h2
       font $titleFont
       margin 0
@@ -124,13 +135,13 @@ a
       top 0
       right 0
       color #999
-      font $timeFont
+      font $titleFont
       pointer-events none
     &:hover
       a
-        color $mainColor
+        color darken($mainColor, 30%)
       time
-        color white
+        color darken($mainColor, 30%)
 
 .hr
   display none
@@ -139,28 +150,31 @@ a
   padding 10px 0 25px 0
   header
     h1
-      font-size 1.6em
-      font-family 'Helvetica Neue', Helvetica, Arial, sans-serif
+      font-size 2.6em
       font-weight 400
       position relative
-      margin-bottom 0.5em
+      margin-bottom 5px
+      font $headerFont
       a
         color inherit !important
     .meta
       padding-right 32px
-      font-size 0.9em
+      font $metaFont
       display block
-      text-align right
       color #909090
       time
-        display block
-        margin-bottom 5px
+        color #9B9 
+      .tags
+        a
+          color #d94 !important
+          &:hover
+            color darken($mainColor, 30%) !important
     
   header, .content, footer
       margin 0 32px
   
   .content
-    margin-top 10px
+    margin-top 50px
     line-height 1.6
     h1, h2
       font-size 1.6em
@@ -191,8 +205,8 @@ a
   
   footer
     color #777
-    border-left 2px solid #DDD
-    padding-left 15px
+    border-top 2px solid #DDD
+    padding-top 15px
     margin-top 30px
   
   .content, footer
@@ -212,7 +226,6 @@ a
     z-index 2
 
 .pagination
-  font-family Lekton
   margin-top 2em
   .next
     float right
@@ -222,20 +235,23 @@ a
       color white !important
 
 .mugshot
-    float right
-    margin-left 15px
-    border 2px solid #ddd
+    float left
+    margin-right 15px
+    border-radius 6px
+    width 120px
+    height 120px
 
-@media only screen and (max-width: 481px)
+@media only screen and (max-width: 1023px)
   
   #container
     width auto
     margin 0
-    padding 10px 10px
+    padding 0
   
   #sidebar, #content
     float none
     width auto
+    margin-top 10px
   
   #header
     margin-left 0
@@ -250,14 +266,11 @@ a
   #menu
     fix-float()
     width auto
+    margin-left 1.3em
     li
       font-size 1.4em
-      float left
-      width 50%
-      &:nth-child(odd)
-        text-align left
-      &:nth-child(even)
-        text-align right
+      display inline-block
+      margin-left 0.4em
   
   .hr
     display block
@@ -265,6 +278,12 @@ a
     margin-bottom 20px
     
   #content
+    .brag
+      .mugshot
+        width 120px
+        height 120px
+        margin-right 1.5em
+
     margin-left 0
     .posts-list
       .post

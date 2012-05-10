@@ -26,19 +26,11 @@
   </head>
   <body>
     <div id="container">
-        <header role="banner" id="header">
-            <a href="" rel="home">
-                <h1>Words I type <span></span>— Amos Wenger</h1>
-            </a>
-        </header>
         <aside id="sidebar">
             <nav>
                 <ul id="menu">
                     <li>
-                        <a href="about/">about</a>
-                    </li>
-                    <li>
-                        <a href="/">blog</a>
+                        <a href="/">home</a>
                     </li>
                     <li>
                         <a href="https://github.com/nddrylliog">code</a>
@@ -49,12 +41,8 @@
                     <li>
                         <a href="https://twitter.com/nddrylliog">tweets</a>
                     </li>
-                    <li>
-                        <a href="blog/feed.xml" title="Subscribe to RSS feed">feed</a>
-                    </li>
                 </ul>
             </nav>
-            <div class="hr">·</div>
         </aside>
         <div role="main" id="content">
             {{ content }}
@@ -63,5 +51,6 @@
     {% for script in page.scripts %}
     <script src="{{ script }}"></script>
     {% endfor %}
+    <a href="blog/feed.xml" title="Subscribe to RSS feed">feed</a>
   </body>
 </html>
