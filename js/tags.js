@@ -62,6 +62,7 @@
     {
       var tag = tags[ i ],
           url = location.pathname + '#' + tag;
+      if (tag == 'post') continue
       
       links += '<li id="tag-' + tag + '"><a href="' + url + '">' + tag + '</a></li>';
     }
