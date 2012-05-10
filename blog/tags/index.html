@@ -7,8 +7,12 @@ scripts:
   - //ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js
   - js/tags.js?v1
 ---
-<ul id="tags"></ul>
-<div id="tagged-posts" class="posts-list">
+
+<div id="tagged-posts" class="posts-list white-bg">
+  <h2>All my posts, by tags</h2>
+
+  <ul id="tags"></ul>
+
   {% for post in site.posts %}
     <div id="{{ post.id }}" class="post {{ post.tags | join ' ' }}">
       <h2>
