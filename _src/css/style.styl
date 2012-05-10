@@ -7,7 +7,7 @@
 
 // Inspired by http://darkeffector.tumblr.com
 
-@import url('http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700')
+@import url('http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Amethysta')
 
 $bgColor        = #3D4349
 $textColor      = #EFEFEF
@@ -20,10 +20,13 @@ $contentWidth   = 800px
 
 $headerFont     = 700 2.8em 'Open Sans Condensed', sans-serif
 $metaFont       = 700 1.2em 'Open Sans Condensed', sans-serif
-$bragFont       = 700 1.3em 'Open Sans Condensed', sans-serif
+$bragFont       = 300 1.05em Amethysta, serif
 $navFont        = 1.8em \/ 1.5 'Open Sans Condensed', sans-serif
-$bodyFont       = Helvetica, Arial, sans-serif
-$titleFont      = 1.2em \/ 2.5 'Open Sans Condensed', sans-serif
+$bodyFont       = Amethysta, serif
+$titleFont      = 1.0em \/ 1.5 Amethysta, serif
+
+.clear
+  clear both
 
 .white-bg
   text-shadow none
@@ -46,6 +49,7 @@ html
   overflow-y auto
 
 body
+  font-size 1.15em
   font-family $bodyFont
   background $bgColor
   color $textColor
@@ -62,7 +66,7 @@ a
   fix-float()
   width $containerWidth
   padding-left $colSpacing
-  margin-bottom 50px
+  margin 0 auto
   
 #header
   height 100px
@@ -77,6 +81,7 @@ a
 
 #content
   width $contentWidth
+  margin 0 auto
   margin-left $colSpacing
   float left
   h2, h3
@@ -112,12 +117,13 @@ a
   .brag
     font $bragFont
     h1
+      font-family 'Open Sans Condensed', sans-serif
       font-size 2.1em
     .mugshot
       width 240px
       height 240px
       margin-right 1.5em
-    margin-bottom 35px
+    margin-bottom 50px
 
   .post
     fix-float()
@@ -126,7 +132,7 @@ a
     border-top 1px solid #ccc
     h2
       font $titleFont
-      margin 0
+      margin 0.5em 0
       a
         color inherit
         display block
@@ -136,6 +142,7 @@ a
       right 0
       color #999
       font $titleFont
+      margin 0.5em 0
       pointer-events none
     &:hover
       a
@@ -171,7 +178,7 @@ a
             color darken($mainColor, 30%) !important
     
   header, .content, footer
-      margin 0 32px
+      margin 0 60px
   
   .content
     margin-top 50px
@@ -245,7 +252,8 @@ a
   
   #container
     width auto
-    margin 0
+    max-width $contentWidth
+    margin 0 auto
     padding 0
   
   #sidebar, #content
@@ -258,15 +266,14 @@ a
     h1
       font-size 34px
       line-height 1.2
-      span
-        display block
+      span display block
         height 0
         visibility hidden
   
   #menu
     fix-float()
     width auto
-    margin-left 1.3em
+    margin-left 8px
     li
       font-size 1.4em
       display inline-block
@@ -278,28 +285,25 @@ a
     margin-bottom 20px
     
   #content
-    .brag
-      .mugshot
-        width 120px
-        height 120px
-        margin-right 1.5em
-
     margin-left 0
     .posts-list
-      .post
-        margin-bottom 25px
-        h2
-          line-height 1.4
-        time
-          display none
+      .brag
+        .mugshot
+          max-width 240px
+          width 100%
+          height auto
+          margin 0 4% 4% 0
+        h1
+          font-size 1.8em
     
     .post-single
       padding 1px 0 20px 0 !important
       header, .content, footer
         margin 0 15px
       header
+        margin-bottom 30px
         h1
-          font-size 1.4em
+          font-size 1.8em
         .meta
           text-align left
           padding 0
@@ -309,3 +313,29 @@ a
         blockquote, code
           padding-left 5px
   
+@media only screen and (max-width: 600px)
+    
+  #content
+    margin-left 0
+    .posts-list
+      .brag
+        font-size 1.1em
+        .mugshot
+          width 33%
+          min-width: 80px
+          height auto
+        h1
+          font-size 1.3em
+
+@media only screen and (max-width: 481px)
+    
+  #content
+    margin-left 0
+    .posts-list
+      .brag
+        font-size 1em
+      .post
+        h2
+          font-size 1em
+        time
+          display none
