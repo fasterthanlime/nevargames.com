@@ -1,0 +1,87 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Amethysta");
+.clear{clear:both}
+.hidden{display:none}
+.white-bg{text-shadow:none;color:#333;background:#fff;box-shadow:0 0 0 4px rgba(0,0,0,0.03) inset,0 0 0 1px rgba(0,0,0,0.15);position:relative;padding:5px 32px 32px 32px}
+*{box-sizing:border-box}
+html{min-height:100%;overflow-y:auto}
+body{font-size:1.15em;font-family:Amethysta,serif;background:#3d4349;color:#efefef;text-shadow:0 1px #333}
+a{text-decoration:none;color:inherit;}
+a:hover{color:#d94}
+#container{height:auto;overflow:hidden;width:1080px;padding-left:20px;margin:0 auto}
+#header{height:100px;margin-left:140px;}
+#header h1{font:700 2.8em 'Open Sans Condensed',sans-serif;margin:0;letter-spacing:1px;text-shadow:4px 4px 11px #222}
+#header a:hover{color:inherit}
+#content{width:800px;margin:0 auto;margin-left:20px;float:left;}
+#content h2,#content h3{font-family:'Open Sans Condensed',sans-serif;font-weight:400}
+#content h2{font-size:1.6em}
+#content h3{margin-bottom:.5em}
+#content p{margin-top:0;line-height:1.5}
+#content a{color:#d94;}
+#content a:hover{color:#ab6d1f}
+#sidebar{width:120px;float:left;margin-top:80px}
+#menu{list-style:none;padding:0;margin:0;}
+#menu li{font:1.8em/1.5 'Open Sans Condensed',sans-serif;}
+#menu li a{display:block}
+#content .posts-list .brag{font:300 1.05em Amethysta,serif;margin-bottom:50px}
+#content .posts-list .brag h1{font-family:'Open Sans Condensed',sans-serif;font-size:2.1em}
+#content .posts-list .brag .mugshot{width:240px;height:240px;margin-right:1.5em}
+#content .posts-list .post{height:auto;overflow:hidden;position:relative;line-height:2;border-top:1px solid #ccc;}
+#content .posts-list .post h2{font:1em/1.5 Amethysta,serif;margin:.5em 0;}
+#content .posts-list .post h2 a{color:inherit;display:block}
+#content .posts-list .post time{position:absolute;top:0;right:0;color:#999;font:1em/1.5 Amethysta,serif;margin:.5em 0;pointer-events:none}
+#content .posts-list .post:hover a{color:#ab6d1f}
+#content .posts-list .post:hover time{color:#ab6d1f}
+.hr{display:none}
+.post-single{padding:10px 0 25px 0;}
+.post-single header h1{font-size:2.6em;font-weight:400;position:relative;margin-bottom:5px;font:700 2.8em 'Open Sans Condensed',sans-serif;}
+.post-single header h1 a{color:inherit !important}
+.post-single header .meta{padding-right:32px;font:700 1.2em 'Open Sans Condensed',sans-serif;display:block;color:#909090;}
+.post-single header .meta time{color:#9b9}
+.post-single header .meta .tags a{color:#d94 !important;}
+.post-single header .meta .tags a:hover{color:#ab6d1f !important}
+.post-single header,.post-single .content,.post-single footer{margin:0 60px}
+.post-single .content{margin-top:50px;line-height:1.6;}
+.post-single .content h1,.post-single .content h2{font-size:1.6em}
+.post-single .content h3{font-size:1.4em}
+.post-single .content h1,.post-single .content h2,.post-single .content h3{color:#333;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:400;margin:1em 0 0 0}
+.post-single .content h3 + p,.post-single .content h2 + p,.post-single .content h3 + p{margin-top:.5em}
+.post-single .content code{font-size:.9em;font-family:Monaco,Droid Sans,Inconsolata,monospace;border-left:2px solid #ddd;display:inline-block;padding-left:10px}
+.post-single .content blockquote{margin:0;border-left:2px solid #ddd;display:block;padding-left:10px}
+.post-single .content ul,.post-single .content ol{padding-left:20px;}
+.post-single .content ul li,.post-single .content ol li{margin-bottom:10px}
+.post-single footer{color:#777;border-top:2px solid #ddd;padding-top:15px;margin-top:30px}
+.post-single .content a,.post-single footer a{color:#c47c24;}
+.post-single .content a:hover,.post-single footer a:hover{color:#7a4e16}
+.post-single .shadow{background:url("/img/post_shadow.png") left bottom no-repeat;width:100%;height:10px;display:block;position:absolute;left:0;bottom:-10px;z-index:2}
+.pagination{margin:1.2em 0;}
+.pagination .next{float:right}
+.pagination a{color:#999 !important;}
+.pagination a:hover{color:#fff !important}
+.mugshot{float:left;margin-right:15px;border-radius:6px;width:120px;height:120px}
+@media only screen and (max-width: 1023px){#container{width:auto;max-width:800px;margin:0 auto;padding:0}
+#sidebar,#content{float:none;width:auto;margin-top:10px}
+#header{margin-left:0;}
+#header h1{font-size:34px;line-height:1.2;}
+#header h1 span display block{height:0;visibility:hidden}
+#menu{height:auto;overflow:hidden;width:auto;margin-left:8px;}
+#menu li{font-size:1.4em;display:inline-block;margin-left:.4em}
+.hr{display:block;text-align:center;margin-bottom:20px}
+#content{margin-left:0;}
+#content .posts-list .brag .mugshot{max-width:240px;width:100%;height:auto;margin:0 4% 4% 0}
+#content .posts-list .brag h1{font-size:1.8em}
+#content .post-single{padding:1px 0 20px 0 !important;}
+#content .post-single header,#content .post-single .content,#content .post-single footer{margin:0 15px}
+#content .post-single header{margin-bottom:30px;}
+#content .post-single header h1{font-size:1.8em}
+#content .post-single header .meta{text-align:left;padding:0}
+#content .post-single .content h1,#content .post-single .content h2,#content .post-single .content h3{font-size:1.2em}
+#content .post-single .content blockquote,#content .post-single .content code{padding-left:5px}
+}@media only screen and (max-width: 600px){#content{margin-left:0;}
+#content .posts-list .brag{font-size:1.1em;}
+#content .posts-list .brag .mugshot{width:33%;min-width:80px;height:auto}
+#content .posts-list .brag h1{font-size:1.3em}
+}@media only screen and (max-width: 481px){#content{margin-left:0;}
+#content .posts-list .brag{font-size:1em}
+#content .posts-list .post h2{font-size:1em}
+#content .posts-list .post time{display:none}
+}
