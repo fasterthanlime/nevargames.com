@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Amethysta");
+@import url("//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Amethysta");
 .clear{clear:both}
 .hidden{display:none}
 .white-bg{text-shadow:none;color:#333;background:#fff;box-shadow:0 0 0 4px rgba(0,0,0,0.03) inset,0 0 0 1px rgba(0,0,0,0.15);position:relative;padding:5px 60px}
