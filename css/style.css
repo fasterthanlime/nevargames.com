@@ -24,8 +24,9 @@ a:hover{color:#d94}
 #menu li a{display:block}
 #content .posts-list .brag{font:300 1.05em Amethysta,serif;margin-bottom:10px;}
 #content .posts-list .brag h1{font-family:'Open Sans Condensed',sans-serif;font-size:2.1em}
-#content .posts-list .brag .mugshot{width:240px;height:240px;margin-right:1.5em}
-#content .posts-list .post{height:auto;overflow:hidden;position:relative;line-height:2;border-top:1px solid #ccc;}
+#content .posts-list .brag .mugshot{width:200px;height:200px;margin-right:1.5em}
+#content .posts-list .post{height:auto;overflow:hidden;position:relative;line-height:2;border-bottom:1px solid #ccc;}
+#content .posts-list .spacer {width: 100%; height: 25px;}
 #content .posts-list .post h2{font:1em/1.5 Amethysta,serif;margin:.5em 0;}
 #content .posts-list .post h2 a{color:inherit;display:block}
 #content .posts-list .post time{position:absolute;top:0;right:0;color:#999;font:1em/1.5 Amethysta,serif;margin:.5em 0;pointer-events:none}
