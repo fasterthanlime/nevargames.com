@@ -1,8 +1,10 @@
 
 server:      true
 server_port: 4000
-base-url:    'amos.me'
-url:         http://amos.me/
+#base-url:    'amos.me'
+base-url:    'localhost:4000'
+#url:         https://amos.me/
+url:         https://localhost:4000/
 
 include:     []
 exclude:
