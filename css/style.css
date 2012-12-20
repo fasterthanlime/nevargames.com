@@ -48,6 +48,8 @@ a:hover{color:#d94}
 .post-single .content h1,.post-single .content h2,.post-single .content h3{color:#333;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:400;margin:1em 0 0 0}
 .post-single .content h3 + p,.post-single .content h2 + p,.post-single .content h3 + p{margin-top:.5em}
 .post-single .content table.highlighttable {width: 100%; padding: 0; background-color: #FDF6E3; font-size:.8em;font-family:Source Code Pro,Monaco,Droid Sans,Inconsolata,monospace;border-left:2px solid #ddd;display:inline-block;}
+.post-single .content table.highlighttable pre {font-size: .9em;}
+.post-single .content img{max-width: 675px;}
 .post-single .content blockquote{margin:0;border-left:2px solid #ddd;display:block;padding-left:10px}
 .post-single .content ul,.post-single .content ol{padding-left:20px;}
 .post-single .content ul li,.post-single .content ol li{margin-bottom:10px}
