@@ -50,7 +50,7 @@ a:hover{color:#d94}
 .post-single .content table.highlighttable {width: 100%; padding: 0; background-color: #FDF6E3; font-size:.8em;font-family:Source Code Pro,Monaco,Droid Sans,Inconsolata,monospace;border-left:2px solid #ddd;display:inline-block;}
 .post-single .content table.highlighttable pre {font-size: .9em;}
 .post-single .content p {width: 100%;}
-.post-single .content p img {max-width: 100%;}
+.post-single .content p img {max-width: 100%; display: block; margin: 20px auto;}
 .post-single .content p code {font-size: 0.8em; display: inline-block; background-color: #FDF6E3; border: 1px solid rgb(209, 209, 209); padding: 0 2px;}
 .post-single .content blockquote{margin:0;border-left:2px solid #ddd;display:block;padding-left:10px}
 .post-single .content ul,.post-single .content ol{padding-left:20px;}
