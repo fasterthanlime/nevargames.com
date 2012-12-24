@@ -1,5 +1,5 @@
 .PHONY: all
 
 all:
-	cd _posts && git pull --rebase origin master
+	cd _posts && git pull origin master
 	jekyll --no-server
