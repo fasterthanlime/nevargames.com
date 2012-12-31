@@ -2,10 +2,8 @@
 server:      true
 server_port: 4000
 
-#base-url:    'localhost:4000'
-#url:         https://localhost:4000/
-base-url:    'amos.me'
-url:         https://amos.me/
+base-url:    'nevargames.com'
+url:         https://nevargames.com/
 
 include:     []
 exclude:
