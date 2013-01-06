@@ -21,9 +21,11 @@ a:hover{color:black}
 #content a{color:#886200;}
 #content a:hover{color:#613E0A;}
 #sidebar{float:left;margin-top:20px;margin-bottom: 20px;}
+#sidebar a:hover {color: #666}
 #menu{list-style:none;padding:0;margin:0;}
 #menu li{font:1.8em/1.5 'Donegal One',sans-serif;margin-left: 20px;}
 #menu li{display:inline-block}
+#content .posts-list {background: white !important;}
 #content .posts-list .brag{font:300 1.05em Donegal One,serif;margin-bottom:10px;}
 #content .posts-list .brag h1{font-family:'Donegal One',sans-serif;font-size:2.1em}
 #content .posts-list .brag .mugshot{width:200px;height:200px;margin-right:1.5em}
@@ -32,7 +34,7 @@ a:hover{color:black}
 #content .posts-list .post h2{font:1em/1.5 Donegal One,serif;margin:.5em 0;}
 #content .posts-list .post h2 a{color:inherit;display:block}
 #content .posts-list .post time{position:absolute;top:0;right:0;color:#999;font:1em/1.5 Donegal One,serif;margin:.5em 0;pointer-events:none}
-#content .posts-list .post:hover a{color:white}
+#content .posts-list .post:hover a{color:#666}
 #content .posts-list .post:hover time{color:#6F6F6F}
 .hr{display:none}
 .post-single{padding:10px 0 25px 0;}
